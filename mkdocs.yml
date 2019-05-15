@@ -1,0 +1,47 @@
+# Project information
+site_name: 'Jeison Sosa'
+site_description: 'Personal webpage'
+site_author: 'Jeison Sosa'
+site_url: 'https://jsosa.github.io'
+
+# Repository
+repo_name: 'github.com/jsosa'
+repo_url: 'https://github.com/jsosa'
+
+# Copyright
+copyright: 'Copyright &copy; 2019 Jeison Sosa'
+
+# Configuration
+theme:
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+
+# Customization
+extra:
+  manifest: 'manifest.webmanifest'
+  social:
+    - type: 'github'
+      link: 'https://github.com/jsosa'
+    - type: 'twitter'
+      link: 'https://twitter.com/jsosatw'
+    - type: 'linkedin'
+      link: 'https://linkedin.com/in/jsosain'
+
+# Google Analytics
+google_analytics:
+  - 'UA-XXXXXXXX-X'
+  - 'auto'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
