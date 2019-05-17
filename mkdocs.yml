@@ -33,6 +33,21 @@ extra:
     - type: 'linkedin'
       link: 'https://linkedin.com/in/jsosain'
 
+# Navigation
+
+nav:
+  - About: index.md
+  - News: news.md
+  - Projects: projects.md
+  - Software:
+    - LFPtools: lfptools.md
+    - gdalutils: gdalutils.md
+    - hydroutils: hydroutils.md
+    - outlierml: outlierml.md
+    - more...: more.md
+  - Resume: resume.md
+  - Contact: contact.md
+
 # Google Analytics
 google_analytics:
   - 'UA-XXXXXXXX-X'
