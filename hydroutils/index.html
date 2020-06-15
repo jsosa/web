@@ -534,13 +534,13 @@
 
 
 <p><code>hydroutils</code> uses a <code>pd.DataFrame</code> object with indexes using a <code>pd.DatetimeIndex</code> object:</p>
-<p><img alt="pic01" src="images/pic01.png?raw=true" /></p>
+<p><img alt="pic01" src="../images/pic01.png?raw=true" /></p>
 <p>Annual maxima (AMAX) is calculated via:</p>
 <div class="codehilite"><pre><span></span><span class="n">hu</span><span class="o">.</span><span class="n">find_events_amax</span><span class="p">(</span><span class="n">serie</span><span class="p">)</span>
 </pre></div>
 
 
-<p><img alt="pic02" src="images/pic02.png?raw=true" /></p>
+<p><img alt="pic02" src="../images/pic02.png?raw=true" /></p>
 <p>where <code>serie</code> is the <code>pd.DataFrame</code> object defined before</p>
 <p>AMAX can be visualized via:</p>
 <div class="codehilite"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">serie</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
@@ -550,14 +550,14 @@
 </pre></div>
 
 
-<p><img alt="pic03" src="images/pic03.png?raw=true" /></p>
+<p><img alt="pic03" src="../images/pic03.png?raw=true" /></p>
 <p>A plot showing a fitted distribution can be obtained via:</p>
 <div class="codehilite"><pre><span></span><span class="n">amax_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">amax</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">squeeze</span><span class="p">())[</span><span class="mi">1</span><span class="p">:]</span>
 <span class="n">ax</span> <span class="o">=</span> <span class="n">hu</span><span class="o">.</span><span class="n">plot_return</span><span class="p">(</span><span class="n">amax_vals</span><span class="p">,</span><span class="n">hu</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">pearson3</span><span class="p">,</span><span class="s1">&#39;mle&#39;</span><span class="p">)</span>
 </pre></div>
 
 
-<p><img alt="pic04" src="images/pic04.png?raw=true" /></p>
+<p><img alt="pic04" src="../images/pic04.png?raw=true" /></p>
 <p>where <code>amax_vals</code> is the <code>pd.DataFrame</code> object obtained in the previous step <code>hu.stats.pearson3</code> can be replaced by any other distribution from Scipy, check a list of distributions available here <a href="https://docs.scipy.org/doc/scipy/reference/stats.html">https://docs.scipy.org/doc/scipy/reference/stats.html</a>. <code>mle</code> is the method used to estimate the distribution parameters. Optionally <code>lmo</code> can also be used to estimate parameters by using original fortran J.R.M Hosking subroutines.</p>
 <p>In hydrology is preferred to work with Return Periods, then a function has been created to retreive corresponding discharge value to a given return period</p>
 <p>Retrive discharge for a given return period can be done via:</p>
